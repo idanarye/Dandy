@@ -1,7 +1,0 @@
-enum DERELICT3_LIB_PATH=..."/Derelict3/lib/";
-enum DERELICT3_IMPORT_PATH="/Derelict3/import/";
-
-enum LUAD_SOURCE_PATH="/LuaD/LuaD-master/luad/";
-
-enum GL3N_LIB_PATH="/gl3n/lib/";
-enum GL3N_IMPORT_PATH="/gl3n/import/";

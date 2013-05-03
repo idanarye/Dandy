@@ -4,8 +4,7 @@ import std.process;
 import std.string;
 import std.algorithm;
 import std.array;
-
-import paths;
+import std.path;
 
 int main(string[] args){
     string[] inputFiles;
@@ -28,12 +27,10 @@ int main(string[] args){
     //Set the output file to user selection
     if(outputFile)
         argsAppender.put("-of"~escapeShellFileName(outputFile));
-    //Set the Derelict directories
-    argsAppender.put("-L-L"~escapeShellFileName(DERELICT3_LIB_PATH));
-    argsAppender.put("-L-L"~escapeShellFileName(GL3N_LIB_PATH));
+    //Set the lib directories
+    argsAppender.put("-L-L"~buildPath("dependencies","Derelict3","lib"));
+    argsAppender.put("-L-L"~buildPath("dependencies","gl3n","lib"));
     argsAppender.put([
-            //"DerelictSDL",
-            //"DerelictSDLImage",
             "DerelictFI",
             "DerelictGL3",
             "DerelictGLFW3",
@@ -41,10 +38,10 @@ int main(string[] args){
             "gl3n-dmd",
             "dl",
             ].map!(a=>("-L-l"~a)));
-    argsAppender.put("-I"~escapeShellFileName(DERELICT3_IMPORT_PATH));
-    argsAppender.put("-I"~escapeShellFileName(GL3N_IMPORT_PATH));
+    argsAppender.put("-I"~buildPath("dependencies","Derelict3","import"));
+    argsAppender.put("-I"~buildPath("dependencies","gl3n","import"));
 
     //Run the build command
-    auto dmdResult=system("dmd "~argsAppender.data.join(" "));
+    auto dmdResult=system("dmd "~std.string.join(argsAppender.data," "));
     return dmdResult;
 }

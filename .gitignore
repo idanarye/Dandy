@@ -2,8 +2,5 @@
 #Ignore the object files(and the executable)
 obj/
 
-#Ignore the paths configuration - the template is "paths.d.template"
-paths.d
-
-dev_tests/
-Rakefile
+#Ignore the dependencies folder - it will be created by the deps script
+dependencies/
