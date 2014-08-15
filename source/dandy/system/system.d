@@ -8,7 +8,7 @@ import derelict.opengl3.gl3;
 import derelict.glfw3.glfw3;
 import derelict.freeimage.freeimage;
 
-import dandy.util.all;
+import dandy.util;
 import dandy.system.window;
 
 /**

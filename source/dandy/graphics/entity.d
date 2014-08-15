@@ -4,7 +4,7 @@ import std.typecons;
 
 import gl3n.linalg;
 
-import dandy.util.all;
+import dandy.util;
 import dandy.graphics.base;
 
 public abstract class GEntity{

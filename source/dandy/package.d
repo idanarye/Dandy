@@ -1,9 +1,9 @@
-module dandy.all;
+module dandy;
 
 public{
-	import dandy.system.all;
+	import dandy.system;
 	import dandy.gl.textures;
 	import dandy.gl.buffers;
 	import dandy.common.shaders;
-	import dandy.graphics.all;
+	import dandy.graphics;
 }

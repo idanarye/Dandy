@@ -1,6 +1,6 @@
 module dandy.graphics.world;
 
-import dandy.graphics.all;
+import dandy.graphics;
 
 public class GWorld{
      

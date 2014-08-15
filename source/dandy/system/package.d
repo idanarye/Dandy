@@ -1,4 +1,4 @@
-module dandy.system.all;
+module dandy.system;
 
 public{
     import dandy.system.system;

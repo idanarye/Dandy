@@ -1,4 +1,4 @@
-module dandy.util.all;
+module dandy.util;
 
 public{
 	import dandy.util.singleton;

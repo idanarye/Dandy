@@ -7,8 +7,8 @@ import derelict.opengl3.gl3;
 import derelict.glfw3.glfw3;
 
 import dandy.system.system;
-import dandy.util.all;
-import dandy.graphics.all;
+import dandy.util;
+import dandy.graphics;
 
 /**
  * Represents a single window. Can only have one per thread.

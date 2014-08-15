@@ -1,4 +1,4 @@
-module dandy.graphics.all;
+module dandy.graphics;
 
 public{
     import dandy.graphics.base;

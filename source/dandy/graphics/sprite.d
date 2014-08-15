@@ -4,8 +4,8 @@ import std.typecons;
 
 import gl3n.linalg;
 
-import dandy.util.all;
-import dandy.graphics.all;
+import dandy.util;
+import dandy.graphics;
 
 public class FreeSprite:GEntity{
     mixin attribute!(vec2,"pos");

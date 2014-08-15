@@ -5,7 +5,7 @@ import gl3n.linalg;
 import dandy.gl.textures;
 import dandy.gl.shaders;
 
-import dandy.graphics.all;
+import dandy.graphics;
 /**
  * An image - a texture, rectangle on that texture, and a shader program to
  * render it.
