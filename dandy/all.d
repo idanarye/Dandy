@@ -1,7 +1,9 @@
 module dandy.all;
 
-public import dandy.system.all;
-public import dandy.gl.textures;
-public import dandy.gl.buffers;
-public import dandy.common.shaders;
-public import dandy.graphics.images;
+public{
+	import dandy.system.all;
+	import dandy.gl.textures;
+	import dandy.gl.buffers;
+	import dandy.common.shaders;
+	import dandy.graphics.all;
+}

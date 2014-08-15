@@ -1,4 +1,4 @@
-module dandy.util;
+module dandy.util.singleton;
 
 /**
  * A mixin that implements the singleton pattern.
