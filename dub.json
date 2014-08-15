@@ -1,0 +1,13 @@
+{
+	"name": "Dandy",
+	"description": "A minimal D application.",
+	"copyright": "Copyright © 2014, idanarye",
+	"authors": ["idanarye"],
+	"dependencies": {
+		"derelict-fi": ">=1.0.0",
+		"derelict-gl3": ">=1.0.4",
+		"derelict-glfw3": ">=1.0.2",
+		"derelict-util": ">=1.0.2",
+		"gl3n": "~master"
+	}
+}
